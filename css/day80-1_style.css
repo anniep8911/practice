@@ -1,0 +1,84 @@
+div.ct2 header{
+    text-align: center;
+    text-transform: capitalize;
+}
+div.ct2 section{
+    position: relative;
+    height: 440px;
+}
+div.ct2 section .artView{
+    width: 100%;
+    overflow: hidden;
+}
+div.ct2 section .artView .artGroup{
+    width: 190%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 550px;
+}
+div.ct2 section .artView .artGroup article{
+    width: calc(15.7% - 20px);
+    height: 400px;
+    transition: width 0.5s;
+    margin-top: 0;
+}
+div.ct2 section .artView .artGroup article.selected{
+    height: 470px;
+    width: calc(21% - 20px);
+}
+div.ct2 section .artView .artGroup article .image{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:height 0.5s;
+}
+div.ct2 section .artView .artGroup article.selected .image{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+div.ct2 section .artView .artGroup article .image.i1{background-image: url(../img/img01.jpg);}
+div.ct2 section .artView .artGroup article .image.i2{background-image: url(../img/img02.jpg);}
+div.ct2 section .artView .artGroup article .image.i3{background-image: url(../img/img03.jpg);}
+div.ct2 section .artView .artGroup article .image.i4{background-image: url(../img/img04.jpg);}
+div.ct2 section .artView .artGroup article .image.i5{background-image: url(../img/img05.jpg);}
+div.ct2 section .artView .artGroup article .image.i6{background-image: url(../img/img06.jpg);}
+div.ct2 section .artView .artGroup article .texts{
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+div.ct2 section .artView .artGroup article .texts h4{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+div.ct2 section .artView .artGroup article .texts p{
+    height: 80px;
+    overflow: hidden;
+}
+div.ct2 section .artView .artGroup article .texts nav{
+    line-height: 40px;
+}
+div.ct2 section .btns{
+    width: calc(100% + 200px);
+    height: 10%;
+    position: absolute;
+    margin: auto;
+    top: 0;left: -100px;right: 0;bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+div.ct2 section .btns button{
+    background-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: #000;
+    width: 20px;
+    height: 60px;
+    font-size: 40px;
+}

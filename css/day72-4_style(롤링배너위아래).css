@@ -1,0 +1,11 @@
+div.target{}
+div.target ul{
+    width: 400px;
+    height: 80px;
+    outline: 2px solid aqua;
+}
+div.target ul li{
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}

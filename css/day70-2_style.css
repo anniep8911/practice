@@ -1,0 +1,40 @@
+div.lotto{}
+div.lotto header{
+    text-align: center;
+}
+div.lotto section{
+    margin-top: 40px;
+}
+div.lotto section .btn{
+    text-align: center;
+}
+div.lotto section .btn button{
+    width: 70%;
+    height: 80px;
+    font-size: 25px;
+}
+div.lotto section .num{
+    text-align: center;
+}
+div.lotto section .num input{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 0;
+    color: #fff;
+    margin: 40px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+div.lotto section .num span{
+    font-size: 36px;
+    font-weight: bold;
+}
+div.lotto section .num #n0{background-color: #f00;}
+div.lotto section .num #n1{background-color: green;}
+div.lotto section .num #n2{background-color: deeppink;}
+div.lotto section .num #n3{background-color: orange;}
+div.lotto section .num #n4{background-color: blue;}
+div.lotto section .num #n5{background-color: purple;}
+div.lotto section .num #n6{background-color: aqua;}

@@ -1,0 +1,99 @@
+div.ct3{
+    position: relative;}
+div.ct3 section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.ct3 section header{
+    width: calc(100% / 12 * 3 - 20px);
+}
+div.ct3 section header .h3View{
+    height: 40px;
+    overflow: hidden;
+}
+div.ct3 section header h3{
+    text-transform: capitalize;
+    font-size: 25px;
+    line-height: 40px;
+}
+div.ct3 section header h5{}
+div.ct3 section header p{
+    height: 80px;
+    overflow: hidden;
+    line-height: 20px;
+}
+div.ct3 section header .sns{
+    font-size: 25px;
+    line-height: 40px;
+    color: #000;
+}
+div.ct3 section .artView{
+    width: calc(100% / 12 * 9 - 20px);
+    overflow: hidden;
+}
+div.ct3 section .artView .artGroup{
+    width: 200%;
+    display: flex;
+    justify-content: space-around;
+}
+div.ct3 section .artView .artGroup article{
+    width: calc(100% / 6 - 20px);
+    position: relative;
+}
+div.ct3 section .artView .artGroup article .image{
+    height: 400px;
+    background-color: #fc0;
+    width: 100%;
+    background-position: center;
+    background-size: conver;
+    background-repeat: no-repeat;
+    
+}
+div.ct3 section .artView .artGroup article .image.i1{background-image: url(../img/pic01.jpg);}
+div.ct3 section .artView .artGroup article .image.i2{background-image: url(../img/pic02.jpg);}
+div.ct3 section .artView .artGroup article .image.i3{background-image: url(../img/pic03.jpg);}
+div.ct3 section .artView .artGroup article .image.i4{background-image: url(../img/pic04.jpg);}
+div.ct3 section .artView .artGroup article .image.i5{background-image: url(../img/pic05.jpg);}
+div.ct3 section .artView .artGroup article .image.i6{background-image: url(../img/pic06.jpg);}
+div.ct3 section .artView .artGroup article .texts{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+div.ct3 section .artView .artGroup article .texts h3{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+div.ct3 section .artView .artGroup article .texts p{
+    height: 80px;
+    overflow: hidden;
+}
+
+div.ct3 .btns{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+div.ct3 .btns .btnPrev{
+   
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+}
+div.ct3 .btns .btnNext{
+   
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+}

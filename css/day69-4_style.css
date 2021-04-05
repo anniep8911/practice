@@ -1,0 +1,36 @@
+button{
+    width: 90%;
+    margin-top: 40px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+div.game header h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+div.game section{
+    margin-top: 0;
+}
+div.game section .msg{
+    margin-top: 40px;
+}
+div.game section .msg input{
+    width: 90%;
+    line-height: 80px;
+    font-size: 18px;
+    border: 0;
+    text-align: center;
+}
+
+div.game section input{
+    width: 60%;
+    line-height: 40px;
+    font-size: 20px;
+}
+div.game section .answer{
+    width: 30%;
+    height: 50px;
+    margin-top: 20px;
+
+}

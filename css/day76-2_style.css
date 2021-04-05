@@ -1,0 +1,49 @@
+div.hdrWrap{
+    background-color: #ccc;
+}
+div.hdrWrap header{
+    width: 90%;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 80px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+div.hdrWrap header h1{
+    font-size: 32px;
+    line-height: 60px;
+}
+div.hdrWrap header .bars{
+    position: relative;
+    font-size: 30px;
+    line-height: 60px;
+}
+div.hdrWrap header .btn button{
+    height: 40px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 3px solid #fc0;
+}
+
+div.navWrap{
+    background-color: #999;
+    display: none;
+}
+div.navWrap .nav{
+    color: #333;
+    padding:20px 0;
+    line-height: 40px;
+    font-family: 'Noto Sans KR';
+    text-align: center;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+div.navWrap .nav li{
+    width: 20%;
+    margin-left: 34%;
+    cursor: pointer;
+}

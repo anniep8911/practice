@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            var text=['안녕하세요','반갑습니다','또만나요'];
+            var len = text[0].length,
+            text1 = text[0].split(""),
+            text2 = text[1].split(""),
+            text3 = text[2].split("");
+            var i=0;
+            var typep = setInterval(type,1000);
+
+            function type(){
+                var write = $('.writing h2:eq(0)');
+                write.append(text1[i]);
+                i++;
+                if(i>=len+1){
+                    clearInterval(typep);
+                    i=0;
+                    typep = setInterval(type2,1000);
+                }
+                function type2(){
+                    write = $('.writing h2:eq(1)');
+                    write.append(text2[i]);
+                    i++;
+                    if(i>=len+1){
+                    clearInterval(typep);
+                    i=0;
+                    typep = setInterval(type3,1000);
+                    }
+                }
+                function type3(){
+                    write = $('.writing h2:eq(2)');
+                    write.append(text3[i]);
+                    i++;
+                    if(i>=len+1){
+                    clearInterval(typep);
+                    write.text('');
+                    i=0;
+                    }
+                }
+            }
+        });
+    </script>
+    <body>
+        <div class="writing">
+            <h2></h2>
+            <h2></h2>
+            <h2></h2>
+        </div>
+    </body>
+</html>

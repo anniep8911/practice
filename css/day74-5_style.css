@@ -1,0 +1,40 @@
+div.gal008{}
+div.gal008 header{ text-align: center;}
+div.gal008 header h3{}
+div.gal008 header p{}
+div.gal008 section{
+    display: flex;
+}
+div.gal008 section article{
+    display: flex;
+}
+div.gal008 section article .texts{
+    background-color: #ccc;
+    width: 90px;
+    height: 400px;
+    position: relative;
+}
+div.gal008 section article .texts h3{
+    color: #fff;
+    transform: rotate(90deg);
+    transform-origin: left top;
+}
+div.gal008 section article .texts.i2{background-color: #fc0;}
+div.gal008 section article .texts.i3{background-color: #f00;}
+div.gal008 section article .texts.i4{background-color: #f60;}
+div.gal008 section article .image{
+    height: 400px;
+    background-color: #333;
+    width: 0;
+    transition: width 0.5s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/pic07.jpg);
+}
+div.gal008 section article .image.i2{background-image: url(../img/pic03.jpg);}
+div.gal008 section article .image.i3{background-image: url(../img/pic04.jpg);}
+div.gal008 section article .image.i4{background-image: url(../img/pic05.jpg);}
+div.gal008 section article .texts.show+.image{
+    width: 720px;
+}

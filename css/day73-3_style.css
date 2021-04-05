@@ -1,0 +1,21 @@
+/*day73-3_style.css*/
+div.ga04{}
+div.ga04 header{}
+div.ga04 section{}
+div.ga04 section .image{
+    margin: 0 10px;
+    height: 480px;
+    overflow: hidden;
+}
+div.ga04 section .thumGroup{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+div.ga04 section .thumGroup div{
+    width: calc(100% / 6 - 20px);
+    height: 100px;overflow: hidden;
+}
+div.ga04 section img{
+    width: 100%;
+}

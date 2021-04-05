@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/day69-4_style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/day69-4_script.js"></script>
+</head>
+<body id="bg">
+    <div class="content game">
+        <header>
+            <h3>up & down 게임</h3>
+        </header>
+        <section>
+            <div>
+                <button class="start" onclick="start()">게임시작</button>
+            </div>
+            <p class="msg">
+                <input type="text" id="msg" value="게임시작 버튼을 클릭해주세요.">
+            </p>
+            <div>
+                <input type="text" id="tt" disabled="true">
+                <button class="answer" onclick="check()">정답</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

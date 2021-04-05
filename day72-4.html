@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/day72-4.js"></script>
+    <link rel="stylesheet" href="css/day72-4_style.css">
+</head>
+<body>
+    <h1>appendTo()와 prependTo()알아보기</h1>
+    <p>
+        to는 목적지를 가르킵니다.
+        <br>to right는 오른쪽으로, tobottom은 아래쪽으로라는 의미를 전달 
+        <br>appendTo와 prependTo는 목적지에 첨부되는 문서구조를 만들게됩니다.
+    </p>
+    <ul>
+        <li>
+            <h3>$e.appendTo(target)</h3>
+            <p>
+                e를 첨부합니다.(타겟에게 마지막자식으로!)
+            </p>
+        </li>
+        <li>
+            <h3>$e.prependTo(target)</h3>
+            <p>
+                e를 첨부합니다.(타겟에게 첫번째자식으로!)
+            </p>
+        </li>
+    </ul>
+    <div class="target">
+        <div class="btns">
+            <button class="bt1">appendTo</button>
+            <button class="bt2">prependTo</button>
+        </div>
+        <ul>
+            <li class="ele1">List Item 01</li>
+            <li class="ele2">List Item 02</li>
+            <li class="ele3">List Item 03</li>
+            <li class="ele4">List Item 04</li>
+        </ul>
+    </div>
+</body>
+</html>

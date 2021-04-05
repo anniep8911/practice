@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+        }
+        div.box{width: 200px; height: 200px; position: relative; background-color: #fc0;}
+        div.boxD{width: 500px; height: 600px; outline: 2px solid black;}
+        div.talk{opacity: 0; position: absolute; top: 0; left: 0;}
+        div.talk2{opacity: 0; position: absolute; top: 0; left: 0;}
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $('.box').draggable();
+            $('.boxD').droppable({
+                drop: function(){
+                    $(this).css({backgroundColor:'black'});
+                    $('.box').css({top:0,left:0});
+                }
+            });
+
+            $('.box').mousemove(function(event){
+                var x=event.pageX, y=event.pageY;
+                $('.talk').css({opacity:1});
+                $('.talk').css({left:x});
+                $('.talk').css({top:y-50+'px'});
+            });
+            $('.box').mouseleave(function(event){
+                $('.talk').css({opacity:0});
+                
+            });
+            $('.boxD').mousemove(function(event){
+                $('.talk').text('드롭!');
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="boxD"></div>
+    <div class="talk">
+        <p>드래그!</p>
+    </div>
+</body>
+</html>

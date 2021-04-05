@@ -1,0 +1,65 @@
+div.cnt28 header{
+    text-align: center;
+}
+div.cnt28 section{
+    display: flex;
+    justify-content: space-between;
+}
+div.cnt28 section .imgWrap{
+    width: calc(70% - 20px);
+}
+div.cnt28 section .imgWrap .imgMain{
+    height: 280px;
+    background-color: #ccc;
+}
+div.cnt28 section .imgWrap .imgThumb{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+div.cnt28 section .imgWrap .imgThumb .image{
+    height: 80px;
+    background-color: #ccc;
+    width: calc(100% / 4 - 20px);
+}
+div.cnt28 section .imgWrap .imgThumb .image.i1{}
+div.cnt28 section .imgWrap .imgThumb .image.i2{}
+div.cnt28 section .imgWrap .imgThumb .image.i3{}
+div.cnt28 section .imgWrap .imgThumb .image.i4{}
+div.cnt28 section article{
+    width: calc(30% - 20px);
+}
+div.cnt28 section article h4{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 24px;
+}
+div.cnt28 section article dl{
+    border-top: 1px solid gray;
+}
+div.cnt28 section article dl dt{
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;
+    border-top : 1px solid gray;
+    cursor: pointer;
+}
+div.cnt28 section article dl dd{
+    height: 0px;
+    overflow: hidden;
+    line-height: 20px;
+    transition: height 0.5s;
+}
+div.cnt28 section article dl dt.show+dd{
+    height: 120px;
+}
+div.cnt28 section article .btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+div.cnt28 section article .btns button{
+    background-color: #fff;
+    border: 2px solid #fc0;
+    width: calc(50% - 20px);
+}

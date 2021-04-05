@@ -1,0 +1,119 @@
+div.ct02 header{
+    text-align: center;
+}
+div.ct02 section{
+  
+    position: relative;
+}
+div.ct02 section .btns{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    display: flex;
+}
+div.ct02 section .btns div{
+    width: calc(100%/3);
+    height: 100%;
+    cursor: pointer;
+}
+div.ct02 section .imgView{
+    overflow: hidden ;
+}
+div.ct02 section .imgView .imgGroup{
+    width: 200%;
+    display: flex;
+    justify-content: space-around;
+}
+div.ct02 section .imgView .imgGroup .image{
+    width: calc(100% / 6 - 20px);
+    height: 440px;
+}
+div.ct02 section .imgView .imgGroup .image figure{
+    width: calc(100% - 40px);
+    height: 360px;
+    margin-left: auto;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    transition: opacity 1s;
+}
+div.ct02 section .imgView .imgGroup .image figure.selected{
+    opacity: 1;
+}
+div.ct02 section .imgView .imgGroup .image .i1{background-image: url(../img/img01.jpg);}
+div.ct02 section .imgView .imgGroup .image .i2{background-image: url(../img/img02.jpg);}
+div.ct02 section .imgView .imgGroup .image .i3{background-image: url(../img/img03.jpg);}
+div.ct02 section .imgView .imgGroup .image .i4{background-image: url(../img/img04.jpg);}
+div.ct02 section .imgView .imgGroup .image .i5{background-image: url(../img/img05.jpg);}
+div.ct02 section .imgView .imgGroup .image .i6{background-image: url(../img/img06.jpg);}
+
+div.ct02 section .texts{
+    width: calc(33.33% - 20px);
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0;
+    top: 0;
+}
+div.ct02 section .texts .h4View{
+    width: 70px;
+    overflow: hidden;
+    
+}
+div.ct02 section .texts .h4View .hGroup{
+    width: 420px;
+    display: flex;
+    position: relative;
+}
+div.ct02 section .texts .h4View .hGroup h4{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    width:70px;
+    height:360px;
+    text-align: center;
+}
+
+div.ct02 section .texts .h5View{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+div.ct02 section .texts .h5View .hGroup{
+    position: relative;
+}
+div.ct02 section .texts .h5View .hGroup h5{
+    font-size: 14px;
+}
+div.ct02 section .texts .h5View .pagenum{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+}
+div.ct02 section .texts .h5View .pagenum p{
+    height: 40px;
+    overflow: hidden;
+}
+
+div.ct02 section .texts .pView{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+div.ct02 section .texts .pView .pGroup{
+    width: calc(100% - 50px);
+    position: relative;
+}
+div.ct02 section .texts .pView .pGroup p{
+    height: 40px;
+    overflow: hidden;
+}
+div.ct02 section .texts .pView .btn{
+    font-size: 24px;
+    color: #f60;
+    line-height: 40px;
+}

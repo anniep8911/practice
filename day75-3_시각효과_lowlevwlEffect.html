@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/day75-3_style.css">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/day75-3_script.js"></script>
+    </head>
+    <body>
+        <h1>낮은수준의 시각효과</h1>
+        <h2>.hide() .show() .toggle()
+        </h2>
+        <h3>.method([duration],[easing],[compleat])</h3>
+        <ul>
+            <li>
+                <h4>[duration] : 효과의 지속시간</h4>
+                <p>
+                    효과가 적용되는 시간으로 숫자 형태의 밀리초(ms)단위나 문자형태의 키워드를 사용.
+                    <br>
+                    1000 = 1s; 혹은 'fast' or 'slow'같이 문형태로 지속시간을 사용할 수 있음
+                    <br>
+                    default는 0ms이며,매개변수가 여러개일 경우 400ms로 조정이 된다.
+                </p>
+            </li>
+            <li>
+                <h4>[easing] : 등가속도 운동을 나타냄</h4>
+                <p>
+                    jQuery core에는 easing의 함수가 내장되어있지않아 외부에서 ui plugin이 연결되어있는 상태여야 합니다.
+                </p>
+            </li>
+            <li>
+                <h4>[complete] : 콜백함수의 일종</h4>
+                <p>
+                    함수형태로 적용이되는 인자값입니다.
+                    <br>효과가 실행이 완료되자마자 실행되는 함수.
+                </p>
+            </li>
+        </ul>
+        <fieldset class="basic">
+            <legend>basic effects</legend>
+            <p>
+                hieght속성과 opacity속성을 동시에 조절하여 보이거나 보이지 않게 하고
+                최종결과로 display속성을 none과 none이 아닌상태로 바꿔준다.
+            </p>
+            <div class="btn">
+                <button class="btHide">hide</button>
+                <button class="btShow">show</button>
+                <button class="btToggle">toggle</button>
+            </div>
+            <div class="image">
+                <img src="img/img01.jpg" alt="">
+            </div>
+        </fieldset>
+        <fieldset class="fade">
+            <legend>fading effects</legend>
+            <p>
+                fade는 opacity값만 가지고 전환을 시킴
+                display최종값은 none이나 none이 아닌상태로 변환을 시킴
+            </p>
+            <div class="btn">
+                <button class="btHide">hide</button>
+                <button class="btShow">show</button>
+                <button class="btToggle">toggle</button>
+            </div>
+            <div class="image">
+                <img src="img/img01.jpg" alt="">
+            </div>
+        </fieldset>
+        <fieldset class="slide">
+            <legend>sliding effects</legend>
+            <p>height속성으로 요소가 보이거나 보이지 않게함
+               display 최종값은 none이거나 none이 아닌것으로 전환
+            </p>
+            <div class="btn">
+                <button class="btHide">hide</button>
+                <button class="btShow">show</button>
+                <button class="btToggle">toggle</button>
+            </div>
+            <div class="image">
+                <img src="img/img01.jpg" alt="">
+            </div>
+        </fieldset>
+    </body>
+</html>

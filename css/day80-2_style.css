@@ -1,0 +1,74 @@
+div.hdrWrap{
+    background-color: #f90;
+    padding:20px 0;
+    position: fixed;
+    width: 100%;
+}
+div.hdrWrap header{
+    display: flex;
+    justify-content: space-between;
+}
+div.hdrWrap header nav{
+    display: flex;
+}
+div.hdrWrap header nav h2{
+    margin-left: 30px;
+}
+div.lnbWrap{
+    padding: 20px 0;
+    background-color:#9de;
+    position: fixed;
+    width: 100%;
+    top: 80px;
+}
+div.lnbWrap menu{
+    width: calc(160px * 4);
+    margin: 0 auto;
+    background-color: #ccc;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+div.lnbWrap menu .bg{
+    width: 25%;
+    height: 40px;
+    background-color: #35f;
+    border-radius: 40px;
+}
+div.lnbWrap menu ul{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+div.lnbWrap menu ul li{
+    width: 160px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+div.mnWrap{
+    background-color: #fc0;
+    height: 640px;
+}
+
+div.content.ct02, div.ct04{ background-color: #fcc;}
+div.content section{
+    height: 740px;
+    background-color: #ccc;
+}
+div.ftrWrap{
+    height: 280px;
+    background-color: #000;
+    text-align: center;
+    padding: 80px 0;
+}
+div.ftrWrap button{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+}

@@ -1,0 +1,64 @@
+/*day73-4_style.css*/
+div.ga05{}
+div.ga05 header{}
+div.ga05 section{
+    position: relative;
+}
+div.ga05 section .mainImg{
+    margin: 0 10px;
+    height: 480px;
+    overflow: hidden;
+    background-image: url(../img/pic03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.content section p{
+    text-align: right;
+}
+div.ga05 section .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    
+}
+div.ga05 section .btns button{
+    width: 50px;height: 80px;
+    background-color: transparent;
+    font-size: 48px;
+    line-height: 80px;
+ 
+}
+div.ga05 section .thumImg{
+    width: calc(100% / 12 * 10);
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0; bottom: 0;
+    transition: all 1s;
+}
+div.ga05 section .thumImg ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 200%;
+    transition: all 1s;
+}
+div.ga05 section .thumImg ul li{
+    width: calc(100% / 10 - 20px);
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s;
+}
+div.ga05 section .thumImg ul li.i1{background-image: url(../img/pic01.jpg);}
+div.ga05 section .thumImg ul li.i2{background-image: url(../img/pic02.jpg);}
+div.ga05 section .thumImg ul li.i3{background-image: url(../img/pic03.jpg);}
+div.ga05 section .thumImg ul li.i4{background-image: url(../img/pic04.jpg);}
+div.ga05 section .thumImg ul li.i5{background-image: url(../img/pic05.jpg);}
+div.ga05 section .thumImg ul li.i6{background-image: url(../img/pic06.jpg);}
+div.ga05 section .thumImg ul li.i7{background-image: url(../img/pic07.jpg);}
+div.ga05 section .thumImg ul li.i8{background-image: url(../img/pic08.jpg);}
+div.ga05 section .thumImg ul li.i9{background-image: url(../img/pic09.jpg);}
+div.ga05 section .thumImg ul li.i10{background-image: url(../img/pic10.jpg);}

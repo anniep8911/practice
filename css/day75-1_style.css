@@ -1,0 +1,71 @@
+div.cnt28 header{
+    text-align: center;
+}
+div.cnt28 section{
+    display: flex; justify-content: space-around;
+    text-transform: capitalize;
+}
+div.cnt28 section .imgWrap{
+    width: calc(66.66% - 20px);
+    overflow: hidden;
+}
+div.cnt28 section .imgWrap .imgMain{
+    width: 400%;
+    display: flex;
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+div.cnt28 section .imgWrap .imgMain figure{
+    width: 25%;
+    height: 280px;
+    background-color: #999;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.cnt28 section .imgWrap .imgMain figure.i1{}
+div.cnt28 section .imgWrap .imgMain figure.i2{}
+div.cnt28 section .imgWrap .imgMain figure.i3{}
+div.cnt28 section .imgWrap .imgMain figure.i4{}
+div.cnt28 section .imgWrap .imgThumb{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+div.cnt28 section .imgWrap .imgThumb figure{
+    width: 160px;
+    height: 80px;
+    background-color: #999;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.cnt28 section .imgWrap  figure.i1{background-image: url(../img/img02.jpg);}
+div.cnt28 section .imgWrap  figure.i2{background-image: url(../img/img03.jpg);}
+div.cnt28 section .imgWrap  figure.i3{background-image: url(../img/img04.jpg);}
+div.cnt28 section .imgWrap  figure.i4{background-image: url(../img/img05.jpg);}
+div.cnt28 section article{
+    width: calc(33.33% - 20px);
+}
+div.cnt28 section article dl dt{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    background-color: #ccc;
+}
+div.cnt28 section article dl dd{
+    padding-left: 20px;
+    height: 0;
+    overflow: hidden;
+    transition : height 0.3s;
+}
+div.cnt28 section article dl dt.show+dd{
+    height: 120px;
+}
+div.cnt28 section article .btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

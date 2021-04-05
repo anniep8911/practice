@@ -1,0 +1,63 @@
+div.mnWrap{
+    height: 1080px;
+}
+div.mnWrap .imgG{
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+div.mnWrap .imgG .img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.mnWrap .imgG .img.i1{background-image: url(../img/img02.jpg);}
+div.mnWrap .imgG .img.i2{background-image: url(../img/img01.jpg);}
+div.mnWrap .imgG .img.i3{background-image: url(../img/img03.jpg);}
+div.mnWrap .imgG .img.i4{background-image: url(../img/img06.jpg);}
+div.mnWrap header{
+    
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;bottom: 0;left: 0;right: 0;
+    width: 40%;
+    top: 40%;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+div.mnWrap header h1{
+    font-size: 40px;line-height: 40px;
+    text-transform: uppercase;
+}
+div.mnWrap header p{
+    margin-top: 40px;
+}
+div.mnWrap .btns{
+    display: flex;
+    width: 60%;
+    position: absolute;
+    left: 0;right: 0;
+    margin: auto;
+    top: 50%;
+    justify-content: space-between;
+}
+div.mnWrap .btns button{
+    font-size: 40px;
+    background-color: transparent;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+div.mnWrap .btn{
+    text-align: center;
+    position: absolute;
+    left: 0;right: 0;
+    top: 60%;
+    margin: auto;
+}

@@ -1,0 +1,84 @@
+div.ga03 header{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 24px;
+}
+div.ga03 header p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+div.ga03 section{
+    width: 90%;
+    max-width: 1080px;
+    overflow: hidden;
+    position: relative;
+}
+div.ga03 section .imgGroup{
+    display: flex;
+    height: 480px;
+    width: 400%;
+}
+div.ga03 section .imgGroup .image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+
+
+}
+div.ga03 section .imgGroup .image.i1{background-image: url(../img/img03.jpg);}
+div.ga03 section .imgGroup .image.i2{background-image: url(../img/img02.jpg);}
+div.ga03 section .imgGroup .image.i3{background-image: url(../img/img01.jpg);}
+div.ga03 section .imgGroup .image.i4{background-image: url(../img/img04.jpg);}
+div.ga03 section .btns{
+    position: absolute;
+    width: 95%;
+    max-width: 1050px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    top: 0;left: 0;right: 0;bottom: 0;
+
+}
+div.ga03 section .btns button{
+    width: 80px; height: 80px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+div.ga03 section p{
+    position: absolute;
+    color: #fff;
+    top: 20px;
+    right: 20px;
+}
+div.ga03 section .pagenation{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin:auto;
+    position: absolute;
+    bottom: 20px;
+    left: 0; right: 0;
+}
+div.ga03 section .pagenation li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border : 2px solid #fff;
+    cursor: pointer;
+}
+
+div.ga03 section .pagenation li.checked{
+    background-color: #fff;
+    width: 40px;
+    border-radius: 5px;
+}

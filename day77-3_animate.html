@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box{
+            width: 800px;
+            height: 100px;
+            background-color: #fc0;
+        }
+        </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/day77-3_script.js"></script>
+</head>
+<body>
+    <div class="canvas">
+        <div class="box"></div>
+    </div>
+    <h1>custom animation</h1>
+    <h2>.animate(properties, duration, easing, callback)</h2>
+    <h2>.animate(properties,option)</h2>
+    <ol>
+        <li>
+            <h3>properties</h3>
+            <p>
+                객체형(속성과 값의 집합) 데이터를 사용하며,
+                속성과 속성값은 css에서 사용하는 속성과 값의 형태로 사용할 수 
+                있으며 js에서 사용하는 객체속성과 값으로 사용할 수 있음
+            </p>
+            <p>
+                사용예)
+                {속성명:속성값, 속성명: 속성값, 속성명: 속성값}
+            </p>
+        </li>
+        <li>
+            <h3>option</h3>
+            <p>
+                객체형 데이터를 사용하며
+                정해져있는 속성과 속성값을 사용하여 애니메이션 효과를 도움
+            </p>
+            <ul>
+                <li>
+                    <h4>duration : num | str</h4>
+                    <p>애니메이트가 지속되는 시간을 설정합니다.</p>
+                </li>
+                <li>
+                    <h4>easing: str</h4>
+                    <p>
+                        jquery ui plug-in이 필요하며 등가속도 운동을통해
+                        애니메이트되는 형태를 결정 
+                    </p>
+                </li>
+                <li>
+                    <h4>complete:function</h4>
+                    <p>
+                        현재 에니메이트가 완료되었을때 실행되는 함수
+                    </p>
+                </li>
+                <li>
+                    <h4>progress: function</h4>
+                    <p>
+                        현재 애니메이트가 진행중일때 실행되는 함수
+                    </p>
+                </li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,23 @@
+div.hdrWrap{
+    background-color: #f90;
+    padding: 20px 0;
+}
+div.hdrWrap header{
+    display: flex;
+    justify-content: space-between;
+}
+div.hdrWrap header h1{}
+div.hdrWrap header nav{
+    display: flex;
+}
+div.hdrWrap header nav h2{
+    margin-left: 20px;
+    transition: color 0.3s;
+    height: 40px;
+}
+div.hdrWrap header nav h2:hover{
+    color: #fff;
+}
+div.hdrWrap header nav h2.clicked{
+    border-bottom: 4px solid #fff;
+}

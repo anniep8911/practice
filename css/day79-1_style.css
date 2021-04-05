@@ -1,0 +1,67 @@
+div.ct01 header{
+    text-align: center;
+    text-transform: capitalize;
+}
+div.ct01 section{
+    outline: 1px solid red;
+    position: relative;
+}
+div.ct01 section .artView{
+    overflow: hidden;
+}
+div.ct01 section .artGroup{
+    width: 200%;
+    display: flex;
+    justify-content: space-around;
+}
+div.ct01 section article{
+    width: calc(100% / 8 - 20px);
+}
+div.ct01 section article .image{
+    height: 180px; background-color: #999;
+    background-size: cover;
+    background-position: center;
+}
+div.ct01 section article .image.i1{background-image: url(../img/img01.jpg);}
+div.ct01 section article .image.i2{background-image: url(../img/img02.jpg);}
+div.ct01 section article .image.i3{background-image: url(../img/img03.jpg);}
+div.ct01 section article .image.i4{background-image: url(../img/img04.jpg);}
+div.ct01 section article .image.i5{background-image: url(../img/img05.jpg);}
+div.ct01 section article .image.i6{background-image: url(../img/img06.jpg);}
+div.ct01 section article .image.i7{background-image: url(../img/img07.jpg);}
+div.ct01 section article .image.i8{background-image: url(../img/img08.jpg);}
+div.ct01 section article .taxts{
+    padding: 0 10px;
+}
+div.ct01 section article .taxts h4{
+    text-transform: capitalize;
+}
+div.ct01 section article .taxts h5{
+    height: 40px;
+    overflow: hidden;
+}
+div.ct01 section article .taxts p{
+    height: 80px;
+    overflow: hidden;
+}
+div.ct01 section .btns{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin: auto;
+    top: 0;bottom: 0;
+}
+div.ct01 section .btns button{
+    font-size: 36px;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+}
+div.ct01 section .btns .btnPrev{
+    margin-left: -120px;
+}
+div.ct01 section .btns .btnNext{
+    margin-right: -120px;
+}

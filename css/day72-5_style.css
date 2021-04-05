@@ -1,0 +1,45 @@
+div.ga09{}
+div.ga09 header{
+    text-align: center;
+}
+div.ga09 header h3{}
+div.ga09 header p{}
+div.ga09 section{
+    display: flex;
+    justify-content: space-around;
+}
+div.ga09 section figure{
+    width: calc(75% - 20px);
+    height: 280px;
+    background-color: #999;
+}
+div.ga09 section .gallery{
+    width: calc(25% - 20px);
+}
+div.ga09 section .gallery .btns{
+    display: flex;
+    justify-content: flex-end;
+}
+div.ga09 section .gallery .btns span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    line-height: 40px;
+}
+div.ga09 section .gallery .btns button{
+    width: 40px;
+    background-color: transparent;
+}
+div.ga09 section .gallery .artGroup{
+    height: 280px;
+    overflow: hidden;
+}
+div.ga09 section .gallery .artGroup article{
+    padding: 40px 0;
+}
+div.ga09 section .gallery .artGroup article h4{}
+div.ga09 section .gallery .artGroup article p{
+    height: 80px;
+    overflow: hidden;
+}
+div.ga09 section .gallery .artGroup article nav{}
