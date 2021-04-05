@@ -1,0 +1,102 @@
+div.ct05{
+}
+div.ct05 .artView{
+  width:100%;
+  overflow: hidden;
+}
+div.ct05 .artWrap{
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% / 6 * 8);
+}
+div.ct05 .artWrap article{
+  width: calc(100% / 8);
+  background-color: #f60;
+  height: 700px;
+  position: relative;
+  transition: width 0.5s;
+  outline: 1px solid black;
+}
+div.ct05 .artWrap article.show{
+  width: calc(100% / 16 * 6);
+  background-color: #fc0;
+}
+div.ct05 .artWrap article.show .texts{
+  padding: 50px;
+}
+div.ct05 .artWrap article.show .texts h3{
+  display: block;
+  font-size: 48px;
+  text-transform: capitalize;
+  width: 20px;
+  line-height: 60px;
+}
+div.ct05 .artWrap article.show .texts h5{
+  display: block;
+}
+div.ct05 .artWrap article.show .texts p{
+  display: block;
+}
+div.ct05 .artWrap article.show .texts .btns{
+  display: flex;
+  margin-top: 40px;
+
+}
+div.ct05 .artWrap article.show .texts button{
+  background-color: #000;
+  color: #fff;
+  margin-top: 40px;
+}
+div.ct05 .artWrap article.show .texts .btns .btnPrev{
+  font-size: 20px;
+  background-color: #000;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50% ;
+  color: #fff;
+  text-align: center;
+}
+div.ct05 .artWrap article.show .texts .btns .btnNext{
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50% ;
+  text-align: center;
+
+}
+div.ct05 .artWrap article .image{
+  width: 100%;
+  height: 100%;
+
+}
+div.ct05 .artWrap article .texts{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+div.ct05 .artWrap article .texts h2{
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 120px;
+
+}
+div.ct05 .artWrap article .texts h3{
+  display: none;
+}
+div.ct05 .artWrap article .texts h5{
+  display: none;
+}
+div.ct05 .artWrap article .texts p{
+  display: none;
+}
+div.ct05 .artWrap article .texts button{
+  display: none;
+}
+div.ct05 .artWrap article .texts .btns{
+  display: none;
+}
