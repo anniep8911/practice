@@ -1,0 +1,23 @@
+div.ct05{}
+div.ct05 section{
+  max-width: 1440px;
+}
+div.ct05 section .artView{
+  width:100%;
+  outline: 1px solid red;
+}
+div.ct05 section .artView .artGroup{
+  width: calc(100% / 6 * 8);
+  display: flex;
+}
+div.ct05 section .artView .artGroup article{
+  background-color: #ccc;
+  width: calc(100% / 8);
+  transition: width 0.5s;
+}
+div.ct05 section .artView .artGroup article.show{
+  width: calc(100% / 8 * 3);
+}
+div.ct05 section .artView .artGroup article .texts{
+
+}

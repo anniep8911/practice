@@ -1,10 +1,10 @@
-div.ct05{
-}
-div.ct05 .artView{
+div.ct05{}
+div.ct05 section{}
+div.ct05 section .artView{
   width:100%;
   overflow: hidden;
 }
-div.ct05 .artWrap{
+div.ct05 section .artWrap{
   display: flex;
   justify-content: space-between;
   width: calc(100% / 6 * 8);
