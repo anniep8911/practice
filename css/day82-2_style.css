@@ -1,0 +1,79 @@
+/*day82-1_style.css*/
+div.hdrWrap{
+    background-color: #F90;
+    padding: 20px 0;
+    width: 100%;
+}
+div.hdrWrap header{
+    display: flex; justify-content: space-between;
+}
+div.hdrWrap header h1{
+    cursor: pointer;
+}
+div.hdrWrap header nav{
+    display: flex;
+}
+div.hdrWrap header nav h2{
+    margin-left: 30px;
+}
+div.lnbWrap{
+    padding: 20px 0; background-color: #9de;
+    width: 100%;
+}
+div.lnbWrap.top{
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+div.lnbWrap menu{
+    width: calc(160px * 4); margin: 0 auto;
+    background-color: #CCC; border-radius: 40px;
+    overflow: hidden; position: relative;
+}
+div.lnbWrap menu .bg{
+    width: 160px; height: 40px; background-color: #35f; border-radius: 40px;
+}
+div.lnbWrap menu ul{
+    width: 100%; display: flex;
+    position: absolute; top: 0;
+}
+div.lnbWrap menu ul li{
+    width: 160px; line-height: 40px; text-align: center;
+    color: #FFF; cursor: pointer;
+}
+
+div.content{}
+div.content h3{
+    position: relative;
+    top: 80px;
+    opacity: 0;
+}
+div.content p{
+    position: relative;
+    top: 40px;
+    opacity: 0;
+}
+
+div.mnWrap{
+    height: calc(100vh - 160px); background-color: #FCC;
+}
+
+div.ct2,div.ct4{
+    background-color: #999;
+}
+div.content section{
+    height: 740px; background-color: #CCC;
+}
+
+div.ftrWrap{
+    height: 280px; background-color: #000;
+    text-align: center;
+    padding: 80px 0;
+}
+div.ftrWrap button{
+    width: 80px; height: 80px;
+}
+
+
+
+
