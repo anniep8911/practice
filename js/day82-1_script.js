@@ -7,8 +7,7 @@ $(function(){
     //한꺼번에 연결할 수 있음
     //들어가는 변수는 event라는 의미, evt e만 써도 됨.
     //event.type은 해당 이벤트 발생시 타입을 보여줌
-    $('.btTop').on('click mouseenter mouseleave',function(evt){
-        console.log(evt.type);
+    $('.btTop').on('click',function(evt){
+        $('html').animate({scrollTop:0},3000,'easeOutBounce');
     });
-    
 });
