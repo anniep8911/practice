@@ -1,5 +1,5 @@
 $(function(){
-  var $artView = $('.ct05 .artWrap'),
+  var $artView = $('.ct05 .artGroup'),
       $btnPrv = $('.ct05 .btnPrev'),
       $btnNxt = $('.ct05 .btnNext');
 
