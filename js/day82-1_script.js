@@ -1,5 +1,6 @@
 //day82-1_script.js
 $(function(){
+    var i=0;
     //메서드를 연결하는 의미 
     //$('.btTop').click();
 
@@ -10,4 +11,11 @@ $(function(){
     $('.btTop').on('click',function(evt){
         $('html').animate({scrollTop:0},3000,'easeOutBounce');
     });
+
+    $('.lnbWrap li').on('click',function(){
+        i = $(this).index();
+        i = $('.content').eq(i).offset().top;
+        $('html').animate({scrollTop:i});
+    });
+
 });
