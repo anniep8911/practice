@@ -20,6 +20,11 @@ div.lnbWrap{
     padding: 20px 0; background-color: #9de;
     width: 100%;
 }
+div.lnbWrap.top{
+    position:fixed;
+    top: 0;
+    left: 0;
+}
 div.lnbWrap menu{
     width: calc(160px * 4); margin: 0 auto;
     background-color: #CCC; border-radius: 40px;
@@ -41,7 +46,6 @@ div.mnWrap{
     height: calc(100vh - 160px); background-color: #FCC;
 }
 
-div.content{}
 div.ct2,div.ct4{
     background-color: #999;
 }
