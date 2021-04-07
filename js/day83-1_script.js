@@ -7,8 +7,8 @@ $(function(){
         $imgG = $('.lightBox .imgGroup'),
         $lightBox =$('.lightBox'),
         $nvMenu = $('.navWrap menu'),
-        $nvWrap = $('.navWrap');
-
+        $nvWrap = $('.navWrap'),
+        $nv = $('.navWrap nav');
 
         $mnImg.on('click',show);
         $btnClose.on('click',hide);
@@ -33,6 +33,29 @@ $(function(){
             $nvWrap.css({top:eve.pageY-60})
         }
 
+        
+        $nvMenu.on('mouseenter',function(){
+            $nvMenu.animate({width:120},500);
+        });
+        $nvWrap.on('mouseleave',function(){
+            $nvMenu.animate({width:40},500);
+
+        });
+
+
+
+        var flag =  true;
+        $nvMenu.on('click',showNav);
+        function showNav(eve){
+            if(flag){
+                $nv.animate({marginLeft:0});
+                flag=false;
+            }else{
+                $nv.animate({marginLeft:-860})
+                flag=true;
+            }
+        }
+        
         //세팅
         $imgG.css({marginLeft:'-100%'});
         $imgG.find('.image:last').prependTo($imgG);
