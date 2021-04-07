@@ -5,7 +5,9 @@ $(function(){
         $next = $('.lightBox .btns .next'),
         $btn = $('.lightBox .btns .btn'),
         $imgG = $('.lightBox .imgGroup'),
-        $lightBox =$('.lightBox');
+        $lightBox =$('.lightBox'),
+        $nvMenu = $('.navWrap menu'),
+        $nvWrap = $('.navWrap');
 
 
         $mnImg.on('click',show);
@@ -23,8 +25,13 @@ $(function(){
         //커서위치 감지하기
         //event hadler는 매개변수를 (parameter)를 통해 이벤트의 상태를 감지할 수 있다.
         $(window).on('click',function(eve){
-    
+            console.log(eve.pageX, eve.pageY);
         });
+
+        $nvMenu.on('mousemove',moveNav);
+        function moveNav(eve){
+            $nvWrap.css({top:eve.pageY-60})
+        }
 
         //세팅
         $imgG.css({marginLeft:'-100%'});
