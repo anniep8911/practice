@@ -56,7 +56,6 @@ $(function(){
         });
         $nvWrap.on('mouseleave',function(){
             $nvMenu.animate({width:40},500);
-
         });
 
         var flag =  true;
@@ -68,6 +67,18 @@ $(function(){
             }else{
                 $nv.animate({marginLeft:-860})
                 flag=true;
+            }
+        }
+
+        var toggle =  true;
+        요소.on(이벤트,함수명);
+        function 함수(){
+            if(toggle){
+                $nv.animate({marginLeft:0});
+                toggle=false;
+            }else{
+                $nv.animate({marginLeft:-860})
+                toggle=true;
             }
         }
         
