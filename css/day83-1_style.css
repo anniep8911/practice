@@ -90,6 +90,7 @@ div.lightBox section{
     margin:auto;
     position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;
+    overflow: hidden;
 }
 div.lightBox section .imgGroup{
     width: 400%;
@@ -118,7 +119,6 @@ div.lightBox section .btns .bt{
     width: 50%;
     height: 100%;
     float: left;
-    background-color: rgba(0,0,255,0.3);
 }
 div.lightBox section .btns .btn{
     width: 80px;
