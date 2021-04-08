@@ -4,6 +4,7 @@ div.overgrid section{
 div.overgrid section header{
     text-align: left;
     width: 50%;
+    overflow: hidden;
 }
 div.overgrid section header h3{
     margin: 0 10px;
@@ -32,12 +33,16 @@ div.overgrid section header .thm .thmGroup .image{
     height: 200px;
     background-color: #999;
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
 }
-div.overgrid section header .thm .thmGroup .image.i1{}
-div.overgrid section header .thm .thmGroup .image.i2{}
-div.overgrid section header .thm .thmGroup .image.i3{}
-div.overgrid section header .thm .thmGroup .image.i4{}
-div.overgrid section header .thm .thmGroup .image.i5{}
+div.overgrid section header .thm .thmGroup .image.i1{background-image: url(../img/pic01.jpg);}
+div.overgrid section header .thm .thmGroup .image.i2{background-image: url(../img/pic02.jpg);}
+div.overgrid section header .thm .thmGroup .image.i3{background-image: url(../img/pic03.jpg);}
+div.overgrid section header .thm .thmGroup .image.i4{background-image: url(../img/pic04.jpg);}
+div.overgrid section header .thm .thmGroup .image.i5{background-image: url(../img/pic05.jpg);}
 div.overgrid section article{
     width: 50%;
     margin: 0 10px;
@@ -49,6 +54,10 @@ div.overgrid section article .imgView{
     width: calc((100vw - 1060px) / 2 + 100%);
     background-color: #fc0;
     height: 100%;
+    overflow: hidden;
+}
+div.ct06 section article .imgView{
+    direction: ltr;
 }
 div.overgrid section article .imgView .imgGroup{
     width: 500%;
@@ -59,9 +68,13 @@ div.overgrid section article .imgView .imgGroup .image{
     width: 20%;
     text-align: center;
     height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
 }
-div.overgrid section article .imgView .imgGroup .image.i1{}
-div.overgrid section article .imgView .imgGroup .image.i2{}
-div.overgrid section article .imgView .imgGroup .image.i3{}
-div.overgrid section article .imgView .imgGroup .image.i4{}
-div.overgrid section article .imgView .imgGroup .image.i5{}
+div.overgrid section article .imgView .imgGroup .image.i1{background-image: url(../img/pic01.jpg);}
+div.overgrid section article .imgView .imgGroup .image.i2{background-image: url(../img/pic02.jpg);}
+div.overgrid section article .imgView .imgGroup .image.i3{background-image: url(../img/pic03.jpg);}
+div.overgrid section article .imgView .imgGroup .image.i4{background-image: url(../img/pic04.jpg);}
+div.overgrid section article .imgView .imgGroup .image.i5{background-image: url(../img/pic05.jpg);}
