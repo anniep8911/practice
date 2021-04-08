@@ -5,6 +5,7 @@ $(function(){
     $('.navWrap menu').on('mouseleave',menu40);
     $('.navWrap menu').on('click',showNav);
     $('.navWrap menu').on('mousemove',moveNav);
+    $('.navWrap .prev').on('mouseenter click', prevHandler);
     
     //함수영역
     $(window).on('click',function(eve){
@@ -68,4 +69,5 @@ $(function(){
         var posY=(ofY-480)/2;
         $('.lightBox .point').css({top:eve.clientY-posY-40,left:eve.clientX-posX-40});
     }
+
 });

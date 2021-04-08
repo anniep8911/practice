@@ -1,0 +1,67 @@
+div.overgrid section{
+    display: flex;
+}
+div.overgrid section header{
+    text-align: left;
+    width: 50%;
+}
+div.overgrid section header h3{
+    margin: 0 10px;
+}
+div.overgrid section header h5{margin: 0 10px;}
+div.overgrid section header p{margin: 0 10px;}
+div.overgrid section header nav{
+    text-align: right;
+    margin: 0 10px;
+    margin-top: 80px;
+}
+div.overgrid section header nav button{
+    width: 50px;
+}
+div.overgrid section header .thm{}
+div.overgrid section header .thm .thmView{
+    margin-top: 20px;
+}
+div.overgrid section header .thm .thmGroup{
+    width: 250%;
+    display: flex;
+    justify-content: space-around;
+}
+div.overgrid section header .thm .thmGroup .image{
+    width: calc(20% - 20px);
+    height: 200px;
+    background-color: #999;
+    text-align: center;
+}
+div.overgrid section header .thm .thmGroup .image.i1{}
+div.overgrid section header .thm .thmGroup .image.i2{}
+div.overgrid section header .thm .thmGroup .image.i3{}
+div.overgrid section header .thm .thmGroup .image.i4{}
+div.overgrid section header .thm .thmGroup .image.i5{}
+div.overgrid section article{
+    width: 50%;
+    margin: 0 10px;
+}
+div.ct06 section article{
+    direction: rtl;
+}
+div.overgrid section article .imgView{
+    width: calc((100vw - 1060px) / 2 + 100%);
+    background-color: #fc0;
+    height: 100%;
+}
+div.overgrid section article .imgView .imgGroup{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+div.overgrid section article .imgView .imgGroup .image{
+    width: 20%;
+    text-align: center;
+    height: 100%;
+}
+div.overgrid section article .imgView .imgGroup .image.i1{}
+div.overgrid section article .imgView .imgGroup .image.i2{}
+div.overgrid section article .imgView .imgGroup .image.i3{}
+div.overgrid section article .imgView .imgGroup .image.i4{}
+div.overgrid section article .imgView .imgGroup .image.i5{}

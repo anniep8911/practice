@@ -15,6 +15,8 @@ $(function(){
     $('.navWrap').on('mouseleave', menu40);
     $('.navWrap menu').on('click', showNav);
     $('.navWrap menu').on('mousemove', moveNav);
+    $('.lightBox .prev').on('mouseenter click', prevHandler);
+    $('.lightBox .next').on('mouseenter click', nextHandler);
     function menu120(){
         $(this).stop().animate({width:120});
     }
@@ -49,6 +51,8 @@ $(function(){
         //교재 227p, 230p
         offX = $('.lightBox').outerWidth();
         offY = $('.lightBox').outerHeight();
+        var ind = $(this).index();
+        $('.lightBox .imgGroup').stop().animate({marginLeft:-100*ind+'%'},0);
     }
     function closebox(){
         $('.lightBox').fadeOut()
@@ -64,6 +68,39 @@ $(function(){
             left: evt.clientX-posX-40
         });
     }
+
+    var i = 0;
+    function prevHandler(eve){
+        switch(eve.type){
+            case 'mouseenter':{
+                $('.lightBox .point').html('<i class="xi-angle-left-thin"></i>');
+                break;
+            }
+            case 'click':{
+                i= (i+3)%4;
+                $('.lightBox .imgGroup').stop().animate({marginLeft:-100*i+'%'},1000);
+                break;
+            }
+            default: alert('예상치못한 결과발생');
+        }
+    }
+
+    function nextHandler(eve){
+        switch(eve.type){
+            case 'mouseenter':{
+                $('.lightBox .point').html('<i class="xi-angle-right-thin"></i>');
+                break;
+            }
+            case 'click':{
+                i= (i+1) % 4;
+                $('.lightBox .imgGroup').stop().animate({marginLeft:-100*i+'%'},1000);
+                break;
+            }
+            default: alert('예상치못한 결과발생');
+        }
+    }
+
+
 });
 
 
