@@ -1,0 +1,41 @@
+$color:#fc0;
+$font-size:80px;
+$total:6;
+$display:block;
+
+
+@if $color==#f60{
+    $font-size:52px;
+}@else{
+    $color:#f60;
+    $font-size:42px;
+}
+
+h1{
+    color:$color;
+    font-size: $font-size;
+}
+.image div{
+    width: 500px;
+    height: 200px;
+}
+
+.image{
+    color:$color;
+    div{
+        font-size: $font-size;
+        color:white;
+    }
+}
+
+@for $i from 1 to $total{
+    .i#{$i}{
+        background-image: url('../img/img0'+$i+'.jpg')
+    }
+}
+
+@if $display=='block'{
+    h1{
+        background-color: $color;
+    }
+}

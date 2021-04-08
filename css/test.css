@@ -1,0 +1,41 @@
+h1 {
+  color: #f60;
+  font-size: 42px;
+}
+
+.image div {
+  width: 500px;
+  height: 200px;
+}
+
+.image {
+  color: #f60;
+}
+.image div {
+  font-size: 42px;
+  color: white;
+}
+
+.i1 {
+  background-image: url("../img/img01.jpg");
+}
+
+.i2 {
+  background-image: url("../img/img02.jpg");
+}
+
+.i3 {
+  background-image: url("../img/img03.jpg");
+}
+
+.i4 {
+  background-image: url("../img/img04.jpg");
+}
+
+.i5 {
+  background-image: url("../img/img05.jpg");
+}
+
+h1 {
+  background-color: #f60;
+}/*# sourceMappingURL=test.css.map */
