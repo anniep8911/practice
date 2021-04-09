@@ -1,0 +1,22 @@
+$color:#fc0;
+
+div.drag{
+    header{
+        background-color: $color;
+    }
+    section{
+        height: 640px;
+        background-color: #ccc;
+
+        .bar{
+            width: 80px;
+            height: 80px;
+            background-color:$color;
+            border-radius: 20px;
+        }
+        .bar:active{
+            cursor:grab;
+        }
+    }
+
+}
