@@ -1,22 +1,22 @@
 [
     {
-        "id":"idTest",
-        "nickname":"오오오옹",
+        "id":"idTest1",
+        "nickname":"오오오옹1",
         "url":"http://www.naver.com"
     },
     {
-        "id":"idTest",
-        "nickname":"오오오옹",
+        "id":"idTest2",
+        "nickname":"오오오옹2",
         "url":"http://www.daum.com"
     },
     {
-        "id":"idTest",
-        "nickname":"오오오옹",
+        "id":"idTest3",
+        "nickname":"오오오옹3",
         "url":"http://www.google.com"
     },
     {
-        "id":"idTest",
-        "nickname":"오오오옹",
+        "id":"idTest4",
+        "nickname":"오오오옹4",
         "url":"http://www.nate.com"
     }
 ]
