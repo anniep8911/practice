@@ -1,0 +1,61 @@
+//콘텐츠32
+div.ct32{
+    section{
+        width: 1080px;
+        display: flex;
+        header{
+            width: 270px;
+            padding: 0 10px;
+            text-align: left;
+            text-transform: capitalize;
+            h3{
+                line-height: 40px;
+            }
+            p{
+                height: 80px;
+                margin-top: 40px;
+            }
+        }
+        .artWrap{
+            width: 810px;
+            .artView{
+                overflow: scroll;
+                .artGroup{
+                    background-color: #fcc;
+                    display: flex;
+                    justify-content: space-around;
+                    article{
+                        width: 250px;
+                        position: relative;
+                        .image{
+                            height: 420px;
+                            background-color: #ccc;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        .texts{
+                            background-color: rgba(255,255,255,0.7);
+                            padding:20px;
+                            position: absolute;
+                            bottom: 5px;
+                            width: 250-10px;
+                            left: 5px;
+                            h4{
+                                text-transform: capitalize;
+                            }
+                            p{
+                                height: 80px;
+                                overflow: hidden;
+                            }
+                            nav{}
+                        }
+                    }
+                }
+            }
+            .drag{
+                .bar{}
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+div.ct32 section {
+  width: 1080px;
+  display: flex;
+}
+div.ct32 section header {
+  width: 270px;
+  padding: 0 10px;
+  text-align: left;
+  text-transform: capitalize;
+}
+div.ct32 section header h3 {
+  line-height: 40px;
+}
+div.ct32 section header p {
+  height: 80px;
+  margin-top: 40px;
+}
+div.ct32 section .artWrap {
+  width: 810px;
+}
+div.ct32 section .artWrap .artView {
+  overflow: scroll;
+}
+div.ct32 section .artWrap .artView .artGroup {
+  background-color: #fcc;
+  display: flex;
+  justify-content: space-around;
+}
+div.ct32 section .artWrap .artView .artGroup article {
+  width: 250px;
+  position: relative;
+}
+div.ct32 section .artWrap .artView .artGroup article .image {
+  height: 420px;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.ct32 section .artWrap .artView .artGroup article .texts {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  position: absolute;
+  bottom: 5px;
+  width: 240px;
+  left: 5px;
+}
+div.ct32 section .artWrap .artView .artGroup article .texts h4 {
+  text-transform: capitalize;
+}
+div.ct32 section .artWrap .artView .artGroup article .texts p {
+  height: 80px;
+  overflow: hidden;
+}/*# sourceMappingURL=day85-2_style.css.map */

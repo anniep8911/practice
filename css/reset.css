@@ -29,6 +29,7 @@ time, mark, audio, video {
     
     /*추가속성*/
     box-sizing: border-box;
+    direction: ltr;
 }
 
 /* HTML5 display-role reset for older browsers */
