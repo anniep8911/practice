@@ -36,7 +36,7 @@ div.ct32{
                         }
                         @for $i from 1 to 7{
                             .image.i#{$i}{
-                                background-image: url('../img/img0'+i+'.jpg');
+                                background-image: url('../img/img0'+$i+'.jpg');
                             };
                         }
                         .texts{
@@ -78,6 +78,15 @@ div.ct32{
                 }*/
                 .bar{
                     width: 40px;
+                    height: 40px;
+                    background-color: #fc0;
+                    border-radius: 50%; 
+                    line-height: 40px;
+                    font-size: 25px;
+                    text-align: center;
+                }
+                .bar:active{
+                    cursor:grab;
                 }
             }
         }

@@ -39,22 +39,22 @@ div.ct32 section .artWrap .artView .artGroup article .image {
   background-repeat: no-repeat;
 }
 div.ct32 section .artWrap .artView .artGroup article .image.i1 {
-  background-image: url("../img/img0i.jpg");
+  background-image: url("../img/img01.jpg");
 }
 div.ct32 section .artWrap .artView .artGroup article .image.i2 {
-  background-image: url("../img/img0i.jpg");
+  background-image: url("../img/img02.jpg");
 }
 div.ct32 section .artWrap .artView .artGroup article .image.i3 {
-  background-image: url("../img/img0i.jpg");
+  background-image: url("../img/img03.jpg");
 }
 div.ct32 section .artWrap .artView .artGroup article .image.i4 {
-  background-image: url("../img/img0i.jpg");
+  background-image: url("../img/img04.jpg");
 }
 div.ct32 section .artWrap .artView .artGroup article .image.i5 {
-  background-image: url("../img/img0i.jpg");
+  background-image: url("../img/img05.jpg");
 }
 div.ct32 section .artWrap .artView .artGroup article .image.i6 {
-  background-image: url("../img/img0i.jpg");
+  background-image: url("../img/img06.jpg");
 }
 div.ct32 section .artWrap .artView .artGroup article .texts {
   background-color: rgba(255, 255, 255, 0.7);
@@ -92,4 +92,14 @@ div.ct32 section .artWrap .drag {
 }
 div.ct32 section .artWrap .drag .bar {
   width: 40px;
+  height: 40px;
+  background-color: #fc0;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: 25px;
+  text-align: center;
+}
+div.ct32 section .artWrap .drag .bar:active {
+  cursor: -webkit-grab;
+  cursor: grab;
 }/*# sourceMappingURL=day85-2_style.css.map */
