@@ -1,0 +1,38 @@
+div.pg1{
+    header{
+        h3{
+
+        }
+        p{
+
+        }
+    }
+    section{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        article{
+            width: calc(50% - 40px);
+            //&선택자는 상위선택자임. 
+            &:nth-child(2)~article{margin-top: 40px;}
+            .test{
+                h4{
+
+                }
+                h5{
+                    font-size: 24px;
+                }
+            }
+            .progress{
+                background-color: #999;
+                border-radius: 40px;
+                overflow: hidden;
+                .bar{
+                    width: 80%;
+                    height: 40px;
+                    background-color: #f90;
+                }
+            }
+        }
+    }
+}

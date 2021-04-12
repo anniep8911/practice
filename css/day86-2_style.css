@@ -1,0 +1,24 @@
+div.pg1 section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div.pg1 section article {
+  width: calc(50% - 40px);
+}
+div.pg1 section article:nth-child(2) ~ article {
+  margin-top: 40px;
+}
+div.pg1 section article .test h5 {
+  font-size: 24px;
+}
+div.pg1 section article .progress {
+  background-color: #999;
+  border-radius: 40px;
+  overflow: hidden;
+}
+div.pg1 section article .progress .bar {
+  width: 80%;
+  height: 40px;
+  background-color: #f90;
+}/*# sourceMappingURL=day86-2_style.css.map */
