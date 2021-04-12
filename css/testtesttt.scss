@@ -1,0 +1,11 @@
+$color : #f60;
+
+.box{
+    background-color: $color;
+    .innerbox{
+        width: 100%;
+    }
+    .bigbox{
+        width: 30px;
+    }
+}
