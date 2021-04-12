@@ -17,11 +17,33 @@ $(function(){
     });
 */
 
-    var $art = $('.pg1 article'),
-        $bar = $art.find('.bar');
+    var $art = $('.pg1 article');
+    
+    $art.on('mouseenter',ent);
+    
+    function ent(){
+        var ind=0, num=0;
+        ind = $(this).index();
+        num=$art.eq(ind).find('span').text();
+
+        $({percent:0}).animate({percent:num},{
+            duration: 1000,
+            progress: function(){
+                $art.eq(ind).find('span').text(0);
+                $art.eq(ind).find('.bar').css({width:0});         
+                $art.eq(ind).find('span').text(parseInt(this.percent));
+                $art.eq(ind).find('.bar').css({width:this.percent+'%'});
+                
+            }
+        })
+
+    }
+
+    /*
     $art.each(function(i){
-        var num=0;
+        var num=0, per='';
         num = $art.eq(i).find('span').text();
+        per = num+'%';
         $art.eq(i).find('span').text(0);
         $art.eq(i).find('.bar').css({width:0});
         $({percent:0}).animate({percent:num},{
@@ -32,6 +54,6 @@ $(function(){
             }
         });
     });
-    
+    */
 
 });
