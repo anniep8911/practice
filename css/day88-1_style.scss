@@ -19,6 +19,15 @@ div.ct34 {
                     display: flex;
                     text-align: center;
                     justify-content: center;
+                    h4{
+                        opacity: 0;
+                    }
+                    h5{
+                        opacity: 0;
+                    }
+                    p{
+                        opacity: 0;
+                    }
                     &.dragging{
                         background-color: #f00;
 

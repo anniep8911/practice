@@ -29,6 +29,15 @@ div.ct34 section .artGroup article .box {
   z-index: 19;
   overflow: hidden;
 }
+div.ct34 section .artGroup article .box h4 {
+  opacity: 0;
+}
+div.ct34 section .artGroup article .box h5 {
+  opacity: 0;
+}
+div.ct34 section .artGroup article .box p {
+  opacity: 0;
+}
 div.ct34 section .artGroup article .box.dragging {
   background-color: #f00;
 }
