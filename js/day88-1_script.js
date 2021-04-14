@@ -27,6 +27,8 @@ $(function(){
                     txt= $(this).find('h4').text();
                     $h4.text(txt);
                     $dropBox.find('.album').addClass('run');
+                    $dropBox.find('audio').attr('src','mov/ab01_Boo.mp3');
+                    
                 });
             }
         });
