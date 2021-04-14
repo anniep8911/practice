@@ -32,6 +32,15 @@ div.ct34 {
                     &:active {
                         cursor: grabbing;
                     }
+                    @for $i from 1 through 6{
+                        &.b#{$i}{
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: center;
+                            background-image: url('../img/album0'+$i+'.jpg');
+                        }
+                    }
+
                 }
             }
         }
@@ -70,6 +79,9 @@ div.ct34 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position:center;
                     .btStop {
                         width: 40px;
                         border-radius: 50%;

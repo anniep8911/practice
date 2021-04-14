@@ -27,8 +27,8 @@ $(function(){
                     txt= $(this).find('h4').text();
                     $h4.text(txt);
                     $dropBox.find('.album').addClass('run');
-                    $dropBox.find('audio').attr('src','mov/ab01_Boo.mp3');
-                    
+                    $image =$(this).css('background-image');
+                    $dropBox.find('.album .core').css('background-image',$image);
                 });
             }
         });
@@ -38,5 +38,6 @@ $(function(){
             $dragBox.removeClass('dragging');
             $dragBox.animate(boxShow);
             $h4.text('drag here!');
+            $dropBox.find('.album .core').css('background-image','');
         });
 });
