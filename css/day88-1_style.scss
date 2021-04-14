@@ -37,10 +37,9 @@ div.ct34 {
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: center;
-                            background-image: url('../img/album0'+$i+'.jpg');
+                            background-image: url('../img/album0#{$i}.jpg');
                         }
                     }
-
                 }
             }
         }

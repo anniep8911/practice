@@ -6,9 +6,10 @@ $(function(){
         boxShow = {width:'160px',height:'160px',borderRadius:0},
         $h4 = $dropBox.find('h4'),
         txt='',
-        $stop = $dropBox.find('.btStop');
-        
-        
+        $stop = $dropBox.find('.btStop'),
+        $myMusic = $dropBox.find('.texts audio'),
+        mPath = '';
+
         $dragBox.draggable({
             revert: true,
             revertDuration:500,
@@ -29,6 +30,8 @@ $(function(){
                     $dropBox.find('.album').addClass('run');
                     $image =$(this).css('background-image');
                     $dropBox.find('.album .core').css('background-image',$image);
+                    mPath=$(this).attr('data-src');
+                    $myMusic.attr('src',mPath);
                 });
             }
         });
@@ -39,5 +42,6 @@ $(function(){
             $dragBox.animate(boxShow);
             $h4.text('drag here!');
             $dropBox.find('.album .core').css('background-image','');
+            $myMusic.attr('src','');
         });
-});
+    });
