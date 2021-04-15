@@ -1,0 +1,32 @@
+body {
+  overflow-y: hidden;
+}
+body div.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body div.page .content {
+  text-transform: uppercase;
+  width: 1080px;
+  height: 640px;
+  background-color: #ccc;
+}
+body div.btns {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+}
+body div.btns button {
+  width: 60px;
+  height: 60px;
+  background-color: #666;
+  color: #fff;
+  cursor: pointer;
+}/*# sourceMappingURL=day89-1_style.css.map */
