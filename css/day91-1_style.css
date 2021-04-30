@@ -1,0 +1,45 @@
+div.ga03 section {
+  position: relative;
+}
+div.ga03 section .imgView {
+  overflow: hidden;
+}
+div.ga03 section .imgView .imgGroup {
+  width: 400%;
+  display: flex;
+}
+div.ga03 section .imgView .imgGroup .image {
+  width: 25%;
+  height: 420px;
+  background-color: #999;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.ga03 section .imgView .imgGroup .image.i1 {
+  background-image: url("../img/img01.jpg");
+}
+div.ga03 section .imgView .imgGroup .image.i2 {
+  background-image: url("../img/img02.jpg");
+}
+div.ga03 section .imgView .imgGroup .image.i3 {
+  background-image: url("../img/img03.jpg");
+}
+div.ga03 section .imgView .imgGroup .image.i4 {
+  background-image: url("../img/img04.jpg");
+}
+div.ga03 section .btns {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 160px);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: -80px;
+  height: 80px;
+}
+div.ga03 section .btns button {
+  width: 80px;
+  height: 80px;
+}/*# sourceMappingURL=day91-1_style.css.map */

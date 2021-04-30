@@ -1,0 +1,124 @@
+div.ct01 header span {
+  position: relative;
+}
+div.ct01 section {
+  position: relative;
+}
+div.ct01 section .artView {
+  outline: 1px solid black;
+}
+div.ct01 section .artView .artGroup {
+  width: 200%;
+  display: flex;
+  justify-content: space-around;
+}
+div.ct01 section .artView article {
+  width: calc(100% / 8 - 20px);
+}
+div.ct01 section .artView article .image {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.ct01 section .artView article .image.i1 {
+  background-image: url("../img/album01.jpg");
+}
+div.ct01 section .artView article .image.i2 {
+  background-image: url("../img/album02.jpg");
+}
+div.ct01 section .artView article .image.i3 {
+  background-image: url("../img/album03.jpg");
+}
+div.ct01 section .artView article .image.i4 {
+  background-image: url("../img/album04.jpg");
+}
+div.ct01 section .artView article .image.i5 {
+  background-image: url("../img/album05.jpg");
+}
+div.ct01 section .artView article .image.i6 {
+  background-image: url("../img/album06.jpg");
+}
+div.ct01 section .artView article .image.i7 {
+  background-image: url("../img/album07.jpg");
+}
+div.ct01 section .artView article .image.i8 {
+  background-image: url("../img/album08.jpg");
+}
+div.ct01 section .artView article .texts p {
+  height: 80px;
+}
+div.ct01 section .btns {
+  width: calc(100% + 200px);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 80px;
+  left: -100px;
+}
+div.ct01 section .btns button {
+  width: 80px;
+  height: 80px;
+}
+
+div.banner {
+  padding: 80px 0;
+  background-color: #000;
+}
+div.banner section {
+  outline: 1px solid white;
+}
+div.banner section .figGroup {
+  width: 200%;
+  display: flex;
+  justify-content: space-around;
+}
+div.banner section .figGroup figure {
+  width: calc(100% / 12 - 20px);
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 40;
+  color: #fff;
+}
+div.banner section .figGroup figure.i1 {
+  background-image: url("../img/img01.jpg");
+}
+div.banner section .figGroup figure.i2 {
+  background-image: url("../img/img02.jpg");
+}
+div.banner section .figGroup figure.i3 {
+  background-image: url("../img/img03.jpg");
+}
+div.banner section .figGroup figure.i4 {
+  background-image: url("../img/img04.jpg");
+}
+div.banner section .figGroup figure.i5 {
+  background-image: url("../img/img05.jpg");
+}
+div.banner section .figGroup figure.i6 {
+  background-image: url("../img/img06.jpg");
+}
+div.banner section .figGroup figure.i7 {
+  background-image: url("../img/img07.jpg");
+}
+div.banner section .figGroup figure.i8 {
+  background-image: url("../img/img08.jpg");
+}
+div.banner section .figGroup figure.i9 {
+  background-image: url("../img/img09.jpg");
+}
+div.banner section .figGroup figure.i10 {
+  background-image: url("../img/img010.jpg");
+}
+div.banner section .figGroup figure.i11 {
+  background-image: url("../img/img011.jpg");
+}
+div.banner section .figGroup figure.i12 {
+  background-image: url("../img/img012.jpg");
+}/*# sourceMappingURL=day92-2_style.css.map */

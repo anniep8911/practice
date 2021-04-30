@@ -1,22 +1,5 @@
-[
     {
-        "id":"idTest1",
-        "nickname":"오오오옹1",
-        "url":"http://www.naver.com"
-    },
-    {
-        "id":"idTest2",
-        "nickname":"오오오옹2",
-        "url":"http://www.daum.com"
-    },
-    {
-        "id":"idTest3",
-        "nickname":"오오오옹3",
-        "url":"http://www.google.com"
-    },
-    {
-        "id":"idTest4",
-        "nickname":"오오오옹4",
-        "url":"http://www.nate.com"
+        "num" : 20,
+        "success": true,
+        "msg":"데이터 로딩에 성공하였습니다."
     }
-]

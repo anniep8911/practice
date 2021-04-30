@@ -1,0 +1,30 @@
+div.ct01{
+    header{
+        text-transform: capitalize;
+        text-align: center;
+    }
+    section{
+        display: flex;
+        justify-content: space-around;
+        article{
+            width: calc(25% - 20px);
+            .image{
+                height: 180px;
+                background-color: #999;
+            }
+            .texts{
+                margin-top: 20px;
+                text-align: center;
+                h4{
+                    text-transform: capitalize;
+                }
+                h5{}
+                p{}
+                nav{
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+}

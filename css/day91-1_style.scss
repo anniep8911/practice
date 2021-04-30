@@ -1,0 +1,44 @@
+div.ga03{
+    section{
+        position: relative;
+        .imgView{
+            overflow: hidden;
+            .imgGroup{
+                width: 400%;
+                display: flex;
+                .image{
+                    width: 25%;
+                    height: 420px;
+                    background-color: #999;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    @for $i from 1 through 4{
+                        &.i#{$i}{
+                            background-image: url('../img/img0#{$i}.jpg');
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .btns{
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% + 160px);
+            position: absolute;
+            margin: auto;
+            top: 0;bottom: 0;left: -80px;
+            height: 80px;
+            button{
+                width: 80px;height: 80px;
+            }
+            .btPrev{
+
+            }
+            .btNext{
+
+            }
+        }
+    }
+}

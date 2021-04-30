@@ -1,0 +1,27 @@
+div.mnWrap .bgGroup {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+}
+div.mnWrap .bgGroup .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+div.mnWrap .bgGroup .image.i1 {
+  background-image: url("../img/pic01.jpg");
+}
+div.mnWrap .bgGroup .image.i2 {
+  background-image: url("../img/pic02.jpg");
+}
+div.mnWrap .bgGroup .image.i3 {
+  background-image: url("../img/pic03.jpg");
+}
+div.mnWrap .bgGroup .image.i4 {
+  background-image: url("../img/pic04.jpg");
+}/*# sourceMappingURL=day91-2_style.css.map */

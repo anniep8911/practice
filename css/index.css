@@ -1,0 +1,25 @@
+div.ct01 header {
+  text-transform: capitalize;
+  text-align: center;
+}
+div.ct01 section {
+  display: flex;
+  justify-content: space-around;
+}
+div.ct01 section article {
+  width: calc(25% - 20px);
+}
+div.ct01 section article .image {
+  height: 180px;
+  background-color: #999;
+}
+div.ct01 section article .texts {
+  margin-top: 20px;
+  text-align: center;
+}
+div.ct01 section article .texts h4 {
+  text-transform: capitalize;
+}
+div.ct01 section article .texts nav {
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
