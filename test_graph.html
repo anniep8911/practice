@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.charts{
+            width: 80%;
+            margin: 3rem auto;
+            display: flex;
+            justify-content: center;
+        }
+        div.charts>.chat{
+            margin: 0 20px;
+            position: relative;
+        }
+        div.charts>.chat>h2{
+            position: absolute;
+            margin: auto;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% -50%);
+        }
+        div.charts>.chat>svg{
+            width: 220px;
+            height: 220px;
+        }
+        div.charts>.chat>svg>circle{
+            fill:aliceblue;
+            stroke-width: 20;
+            stroke-dasharray: 628;
+            stroke-dashoffset: 628;
+            transform:rotate(-90deg);
+            transform-origin: 50%;
+            stroke-linecap: round;
+        }
+
+        div.charts>.chat:nth-of-type(1)>svg>circle{
+            stroke: #ffc114;
+        }
+        div.charts>.chat:nth-of-type(2)>svg>circle{
+            stroke: aqua
+        }
+        div.charts>.chat:nth-of-type(3)>svg>circle{
+            stroke: brown;
+        }
+        div.charts>.chat:nth-of-type(4)>svg>circle{
+            stroke: darkkhaki;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            var chart = $('.chat');
+
+            chart.each(function(){
+
+                var th = $(this);
+                var title = th.find('h2');
+                var num = title.attr('data-num');
+                $({percent:0}).animate({percent:num},{
+                    duration: 2000,
+                    progress: function(){
+                        var now = this.percent;
+                        var amount = 628-((628*now)/100);
+                        title.text(parseInt(now));
+                        th.find('svg>circle').css('stroke-dashoffset',amount);
+                    }
+                })
+                
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="charts">
+        <div class="chat">
+            <h2 data-num="20">0</h2>
+            <svg>
+                <!--cx : x축의 중심점 100px , cy: y축의 중심점 100px , r: 반지름-->
+                <circle cx="110" cy="110" r="100"></circle>
+            </svg>
+        </div>
+        <div class="chat">
+            <h2 data-num="40">0</h2>
+            <svg>
+                <circle cx="110" cy="110" r="100"></circle>
+            </svg>
+        </div>
+        <div class="chat">
+            <h2 data-num="80">0</h2>
+            <svg>
+                <circle cx="110" cy="110" r="100"></circle>
+            </svg>
+        </div>
+        <div class="chat">
+            <h2 data-num="100">0</h2>
+            <svg>
+                <circle cx="110" cy="110" r="100"></circle>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
